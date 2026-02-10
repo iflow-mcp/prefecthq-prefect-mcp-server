@@ -1,0 +1,1 @@
+#!/usr/bin/env python3\nimport sys\nimport os\nsys.path.insert(0, "/app/auto-mcp-upload/.venv/lib/python3.11/site-packages")\nfrom prefect_mcp_server.__main__ import main\nif __name__ == "__main__":\n    main()

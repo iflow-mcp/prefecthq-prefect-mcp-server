@@ -1,5 +1,5 @@
 [project]
-name = "prefect-mcp"
+name = "iflow-mcp_prefecthq-prefect-mcp"
 description = "MCP server for interacting with Prefect"
 readme = "README.md"
 dynamic = ["version"]
@@ -74,4 +74,4 @@ members = [
     "packages/ingestion_pipeline",
 ]
 # "__init__.py" = ["F401", "I001", "RUF013"]
-# "src/prefect_mcp_server/__init__.py" = ["E402"]
+# "src/prefect_mcp_server/__init__.py" = ["E402"
