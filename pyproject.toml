@@ -1,8 +1,8 @@
 [project]
 name = "iflow-mcp_prefecthq-prefect-mcp"
+version = "0.1.0"
 description = "MCP server for interacting with Prefect"
 readme = "README.md"
-dynamic = ["version"]
 authors = [{ name = "Prefect Technologies", email = "help@prefect.io" }]
 requires-python = ">=3.10"
 dependencies = ["fastmcp>=2.12.3", "prefect>=3.4.22"]
@@ -12,7 +12,7 @@ dependencies = ["fastmcp>=2.12.3", "prefect>=3.4.22"]
 prefect-mcp-server = "prefect_mcp_server.__main__:main"
 
 [build-system]
-requires = ["hatchling", "hatch-vcs"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project.optional-dependencies]
@@ -34,9 +34,6 @@ dev = [
     "syrupy>=5.0.0",
     "ty>=0.0.1a19",
 ]
-
-[tool.hatch.version]
-source = "vcs"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/prefect_mcp_server"]
